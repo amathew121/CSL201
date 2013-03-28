@@ -1,0 +1,485 @@
+<html xmlns="http://www.w3.org/1999/xhtml"><head><meta http-equiv="Content-Type" content="text/html; charset=utf-8"></meta><title>Report</title><style type="text/css" media="all">
+/* CSS Document */
+	UL.ulist {padding: 0 10px; line-height:25px; margin-bottom:0px; margin-top:0px;};
+	LI.list  {padding: 0 10px; line-height:25px; margin-bottom:0px; margin-top:0px; list-style: disc;}
+	LI.list0 {padding: 0 10px; line-height:25px; margin-bottom:0px; margin-top:0px; list-style: disc; color:#65ae5e;}
+	LI.list1 {padding: 0 10px; line-height:25px; margin-bottom:0px; margin-top:0px; list-style: disc; color:#4a7fcb;}
+	LI.list2 {padding: 0 10px; line-height:25px; margin-bottom:0px; margin-top:0px; list-style: disc; color:#e3801c;}
+	LI.list3 {padding: 0 10px; line-height:25px; margin-bottom:0px; margin-top:0px; list-style: disc; color:#c51010;}
+	LI.list4 {padding: 0 10px; line-height:25px; margin-bottom:0px; margin-top:0px; list-style: disc; color:#ab20d8;}
+
+/* zero out */
+        html {
+                margin:0;
+                padding:0;
+        background: url(/bgHTML.png) repeat top center;
+                }
+
+/* basic formatting */
+        body {
+                margin:0;
+                padding:0;
+                background: url(/bgRptBody.png) repeat-x top center;
+                color: #69737b;
+                font-family:10px/12px Arial,Helvetica,sans-serif;
+                border-top: #000 solid 1px;
+                }
+				
+		/* container formatting */              
+        #container {
+                position: relative;
+                }
+                
+        .container_16 {
+                margin-left:auto;
+                margin-right:auto;
+                width:960px;
+                }
+	
+		/* main content of page */
+        #reportContent {
+                background: #FFF;
+                width:920px;
+                height:auto;
+                margin:10px auto;
+                padding: 0 10px 10px 10px;
+                box-shadow: inset #d8d8d8;
+                }
+				
+		.classheader h1 {
+                        color:#ffffff;
+                        font:bold 15px Arial,Helvetica,sans-serif;
+                        padding: 0 10px;
+                        text-align: center;
+                        line-height:25px;
+                        }
+						
+		.classtitle h1 {
+                        color:#ffffff;
+                        font:bold 30px Arial,Helvetica,sans-serif;
+                        padding: 0 10px;
+                        line-height:25px;
+                        }
+						
+		.classtitle h2 {
+                        color:#ffffff;
+                        font:bold 20px Arial,Helvetica,sans-serif;
+                        padding: 0 10px;
+                        line-height:25px;
+                        }
+						
+		.classtitle h3 {
+                        color:#ffffff;
+                        font:16px Arial,Helvetica,sans-serif;
+                        padding: 0 10px;
+                        line-height:25px;
+                        }
+						
+		.classchapter h1 {
+                        background:#053958;
+                        color:#ffffff;
+                        font:bold 20px Arial,Helvetica,sans-serif;
+                        padding: 0 10px;
+                        line-height:25px;
+                        margin-top:2cm;
+                        }
+						
+		.classsection h2 {
+                        background:#053958;
+                        color:#ffffff;
+                        font:bold 13px/14px Arial,Helvetica,sans-serif;
+                        padding: 0 10px;
+                        line-height:25px;
+                        margin-bottom:0px;
+                        margin-top:30px;
+                      }
+
+		.classsection_sub tr, td {
+                        color:#053958;
+                        font:normal 13px/14px Arial,Helvetica,sans-serif;
+                        padding: 0 10px;
+                        line-height:25px;
+                        margin-bottom:0px;
+                      }
+
+		.classsection0 h2 {
+                        background:#053958;
+                        color:#FFFFFF;
+                        font:bold 13px/14px Arial,Helvetica,sans-serif;
+                        padding: 0 10px;
+                        line-height:25px;
+                        margin-bottom:0px;
+                        margin-top:2px;
+                        background-color: #65ae5e;
+                        background-image: -webkit-linear-gradient(left, #65ae5e, #acd3b1);
+                        background-image:    -moz-linear-gradient(left, #65ae5e, #acd3b1);
+                        background-image:     -ms-linear-gradient(left, #65ae5e, #acd3b1);
+                        background-image:      -o-linear-gradient(left, #65ae5e, #acd3b1);
+                        background-image:         linear-gradient(left, #65ae5e, #acd3b1);
+                      }
+
+		.classsection1 h2 {
+                        background:#053958;
+                        color:#FFFFFF;
+                        font:bold 13px/14px Arial,Helvetica,sans-serif;
+                        padding: 0 10px;
+                        line-height:25px;
+                        margin-bottom:0px;
+                        margin-top:2px;
+                        background-color: #4a7fcb;
+                        background-image: -webkit-linear-gradient(left, #4a7fcb, #9ab5dd);
+                        background-image:    -moz-linear-gradient(left, #4a7fcb, #9ab5dd);
+                        background-image:     -ms-linear-gradient(left, #4a7fcb, #9ab5dd);
+                        background-image:      -o-linear-gradient(left, #4a7fcb, #9ab5dd);
+                        background-image:         linear-gradient(left, #4a7fcb, #9ab5dd);
+                      }
+
+		.classsection2 h2 {
+                        background:#053958;
+                        color:#FFFFFF;
+                        font:bold 13px/14px Arial,Helvetica,sans-serif;
+                        padding: 0 10px;
+                        line-height:25px;
+                        margin-bottom:0px;
+                        margin-top:2px;
+                        background-color: #e3801c;
+                        background-image: -webkit-linear-gradient(left, #e3801c, #e9c29d);
+                        background-image:    -moz-linear-gradient(left, #e3801c, #e9c29d);
+                        background-image:     -ms-linear-gradient(left, #e3801c, #e9c29d);
+                        background-image:      -o-linear-gradient(left, #e3801c, #e9c29d);
+                        background-image:         linear-gradient(left, #e3801c, #e9c29d);
+                      }
+
+		.classsection3 h2 {
+                        background:#053958;
+                        color:#FFFFFF;
+                        font:bold 13px/14px Arial,Helvetica,sans-serif;
+                        padding: 0 10px;
+                        line-height:25px;
+                        margin-bottom:0px;
+                        margin-top:2px;
+                        background-color: #c51010;
+                        background-image: -webkit-linear-gradient(left, #c51010, #d58185);
+                        background-image:    -moz-linear-gradient(left, #c51010, #d58185);
+                        background-image:     -ms-linear-gradient(left, #c51010, #d58185);
+                        background-image:      -o-linear-gradient(left, #c51010, #d58185);
+                        background-image:         linear-gradient(left, #c51010, #d58185);
+                      }
+
+		.classsection4 h2 {
+                        background:#053958;
+                        color:#FFFFFF;
+                        font:bold 13px/14px Arial,Helvetica,sans-serif;
+                        padding: 0 10px;
+                        line-height:25px;
+                        margin-bottom:0px;
+                        margin-top:2px;
+                        background-color: #ab20d8;
+                        background-image: -webkit-linear-gradient(left, #ab20d8, #cd90ec);
+                        background-image:    -moz-linear-gradient(left, #ab20d8, #cd90ec);
+                        background-image:     -ms-linear-gradient(left, #ab20d8, #cd90ec);
+                        background-image:      -o-linear-gradient(left, #ab20d8, #cd90ec);
+                        background-image:         linear-gradient(left, #ab20d8, #cd90ec);
+                      }			
+
+		.classcell0 {
+                        background-color: #65ae5e;
+                        background-image: -webkit-linear-gradient(left, #65ae5e, #acd3b1);
+                        background-image:    -moz-linear-gradient(left, #65ae5e, #acd3b1);
+                        background-image:     -ms-linear-gradient(left, #65ae5e, #acd3b1);
+                        background-image:      -o-linear-gradient(left, #65ae5e, #acd3b1);
+                        background-image:         linear-gradient(left, #65ae5e, #acd3b1);
+                      }
+
+		.classcell1 {
+                        background-color: #4a7fcb;
+                        background-image: -webkit-linear-gradient(left, #4a7fcb, #9ab5dd);
+                        background-image:    -moz-linear-gradient(left, #4a7fcb, #9ab5dd);
+                        background-image:     -ms-linear-gradient(left, #4a7fcb, #9ab5dd);
+                        background-image:      -o-linear-gradient(left, #4a7fcb, #9ab5dd);
+                        background-image:         linear-gradient(left, #4a7fcb, #9ab5dd);
+                      }
+
+		.classcell2 {
+                        background-color: #e3801c;
+                        background-image: -webkit-linear-gradient(left, #e3801c, #e9c29d);
+                        background-image:    -moz-linear-gradient(left, #e3801c, #e9c29d);
+                        background-image:     -ms-linear-gradient(left, #e3801c, #e9c29d);
+                        background-image:      -o-linear-gradient(left, #e3801c, #e9c29d);
+                        background-image:         linear-gradient(left, #e3801c, #e9c29d);
+                      }
+
+		.classcell3 {
+                        background-color: #c51010;
+                        background-image: -webkit-linear-gradient(left, #c51010, #d58185);
+                        background-image:    -moz-linear-gradient(left, #c51010, #d58185);
+                        background-image:     -ms-linear-gradient(left, #c51010, #d58185);
+                        background-image:      -o-linear-gradient(left, #c51010, #d58185);
+                        background-image:         linear-gradient(left, #c51010, #d58185);
+                      }
+
+		.classcell4 {
+                        background-color: #ab20d8;
+                        background-image: -webkit-linear-gradient(left, #ab20d8, #cd90ec);
+                        background-image:    -moz-linear-gradient(left, #ab20d8, #cd90ec);
+                        background-image:     -ms-linear-gradient(left, #ab20d8, #cd90ec);
+                        background-image:      -o-linear-gradient(left, #ab20d8, #cd90ec);
+                        background-image:         linear-gradient(left, #ab20d8, #cd90ec);
+                      }			
+
+		.classcell {
+                      }			
+
+		.classsubsection h2 {
+                        background:#9ab3cc;
+                        color:#FFFFFF;
+                        font:bold 13px/14px Arial,Helvetica,sans-serif;
+                        padding: 0 10px;
+                        line-height:25px;
+                        margin-top:0px;
+                        margin-bottom:0px;
+                        }
+						
+		.classh1 h2 {
+                        background:#eef2f3;
+                        color:#053958;
+                        font:bold 13px/14px Arial,Helvetica,sans-serif;
+                        padding: 0 10px;
+                        line-height:25px;
+                        margin-top:0px;
+                        margin-bottom:0px;
+                        }
+						
+		.classh1_grey h2 {
+                        background:#eaeaea;
+                        color:#053958;
+                        font:normal 13px/14px Arial,Helvetica,sans-serif;
+                        padding: 0 10px;
+                        line-height:25px;
+                        margin-top:0px;
+                        margin-bottom:2px;
+                        }
+						
+		.classh2 h2 {
+                        background:#f8f8f8;
+                        font:bold 13px/14px Arial,Helvetica,sans-serif;
+                        padding: 0 10px;
+                        line-height:25px;
+                        margin-top:0px;
+                        margin-bottom:0px;
+                        }
+		.classtext {
+                        font:13px/14px Arial,Helvetica,sans-serif;
+                        padding: 0 10px;
+                        text-align: left;
+                        }	
+						
+		.classpre {
+                        font:12px/14px Courier New, Courier, monospace;
+                        padding: 0 10px;
+                        color:black;
+                        text-align: left;
+                        }	
+						
+		.classtoc {
+                        font:18px Arial,Helvetica,sans-serif;
+                        padding: 0 0px;
+                        line-height:25px;
+                        }
+						
+		.classtoc1 a {
+                        color="#053958";
+                        font:16px/18px Arial,Helvetica,sans-serif;
+                        padding: 0 0px;
+                        text-align: left;
+                        }	
+						
+		.classtoc2 a {
+                        font:13px/14px Arial,Helvetica,sans-serif;
+                        padding: 0 20px;
+                        text-align: left;
+                        color="#69737b"
+                        }						
+ 	
+		</style><script type="text/javascript">
+function toggle(divId)
+{
+var divObj = document.getElementById(divId);
+
+if (divObj) {
+var displayType = divObj.style.display;
+if (displayType == "" || displayType == "block") {
+divObj.style.display = "none";
+} else {
+divObj.style.display = "block";
+}
+}
+}
+
+function ceall(flag)
+{
+var divs = document.getElementsByTagName("div");
+var i = 0;
+
+for (i = 0; i < divs.length; i++) {
+if ( divs[i].getAttribute("id") != null && divs[i].getAttribute("id").match('btag-') ) {
+if ( flag == 0 ) {
+divs[i].style.display = "none";
+} else {
+divs[i].style.display = "block";
+}
+}
+}
+}
+</script></head><body><div class="container_16" id="container"><span xmlns="" class="classtitle"><h1>Nessus Report</h1></span><span xmlns="" class="classtitle"><h2>Report</h2></span><span xmlns="" class="classtitle"><h2>01/Jan/2005:00:23:55 GMT</h2></span><span xmlns="" class="classtitle"><h2>HomeFeed: Commercial use of the report is prohibited</h2></span><span xmlns="" class="classtitle"><h3>Any time Nessus is used in a commercial environment you MUST maintain an active subscription to the ProfessionalFeed in order to be compliant with our license agreement.<a href="http://www.nessus.org/products/nessus-professionalfeed" target="_blank">http://www.nessus.org/products/nessus-professionalfeed</a>
+</h3></span><div id="reportContent"><span xmlns="" class="classtoc">Table Of Contents</span><table xmlns="">
+<tr><td><span class="classtoc1"><a href="#idp10451728">Hosts Summary (Executive)</a></span></td></tr>
+<tr><td><table><tr>
+<td width="5%"><table style="table-layout: fixed;" width="10px" height="10px"><tr><td class=""></td></tr></table></td>
+<td width="95%"><a href="#idp12623680">192.168.5.29</a></td>
+</tr></table></td></tr>
+</table>
+<span xmlns="" class="classchapter"><h1 id="idp10451728">Hosts Summary (Executive)</h1></span><table xmlns="">
+<tr width="100%" onclick="ceall(0)" onmouseover="this.style.cursor='pointer'" title="Collapse"><td align="left" width="100%">[-] Collapse All</td></tr>
+<tr width="100%" onclick="ceall(1)" onmouseover="this.style.cursor='pointer'" title="Expand"><td align="left" width="100%">[+] Expand All</td></tr>
+</table>
+<span xmlns="" class="classsection"><h2 id="idp12623680">192.168.5.29</h2></span><span xmlns="" class="classh1"><h2>Summary</h2></span><p xmlns=""><table width="900px">
+<tr>
+<td width="15%" valign="top" class="classcell"><p><span class="classtext"><font color="#053958" style="font-weight: bold">Critical</font></span></p></td>
+<td width="15%" valign="top" class="classcell"><p><span class="classtext"><font color="#053958" style="font-weight: bold">High</font></span></p></td>
+<td width="15%" valign="top" class="classcell"><p><span class="classtext"><font color="#053958" style="font-weight: bold">Medium</font></span></p></td>
+<td width="15%" valign="top" class="classcell"><p><span class="classtext"><font color="#053958" style="font-weight: bold">Low</font></span></p></td>
+<td width="15%" valign="top" class="classcell"><p><span class="classtext"><font color="#053958" style="font-weight: bold">Info</font></span></p></td>
+<td width="15%" valign="top" class="classcell"><p><span class="classtext"><font color="#053958" style="font-weight: bold">Total</font></span></p></td>
+</tr>
+<tr>
+<td width="15%" valign="top" class="classcell"><p><span class="classtext"><font color="#ab20d8" style="font-weight: bold">0</font></span></p></td>
+<td width="15%" valign="top" class="classcell"><p><span class="classtext"><font color="#c51010" style="font-weight: bold">0</font></span></p></td>
+<td width="15%" valign="top" class="classcell"><p><span class="classtext"><font color="#e3801c" style="font-weight: bold">2</font></span></p></td>
+<td width="15%" valign="top" class="classcell"><p><span class="classtext"><font color="#427796" style="font-weight: bold">0</font></span></p></td>
+<td width="15%" valign="top" class="classcell"><p><span class="classtext"><font color="#65ae5e" style="font-weight: bold">21</font></span></p></td>
+<td width="15%" valign="top" class="classcell"><p><span class="classtext"><font color="#053958" style="font-weight: bold">23</font></span></p></td>
+</tr>
+</table></p>
+<span xmlns="" class="classh1"><h2>Details</h2></span><p xmlns=""><table width="900px">
+<tr>
+<td width="20%" valign="top" class="classcell"><p><span class="classtext"><font color="#053958" style="font-weight: bold">Severity</font></span></p></td>
+<td width="15%" valign="top" class="classcell"><p><span class="classtext"><font color="#053958" style="font-weight: bold">Plugin Id</font></span></p></td>
+<td width="65%" valign="top" class="classcell"><p><span class="classtext"><font color="#053958" style="font-weight: bold">Name</font></span></p></td>
+</tr>
+<tr>
+<td width="20%" valign="top" class="classcell2"><p><span class="classtext"><font color="#ffffff" style="font-weight: bold">Medium (6.4)</font></span></p></td>
+<td width="10%" valign="top" class="classcell"><span class="classtext"><a href="http://www.nessus.org/plugins/index.php?view=single&amp;id=51192" target="_blank"> 51192</a><br></span></td>
+<td width="70%" valign="top" class="classcell"><p><span class="classtext"><font color="#053958" style="font-weight: normal">SSL Certificate Cannot Be Trusted</font></span></p></td>
+</tr>
+<tr>
+<td width="20%" valign="top" class="classcell2"><p><span class="classtext"><font color="#ffffff" style="font-weight: bold">Medium (5.0)</font></span></p></td>
+<td width="10%" valign="top" class="classcell"><span class="classtext"><a href="http://www.nessus.org/plugins/index.php?view=single&amp;id=12218" target="_blank"> 12218</a><br></span></td>
+<td width="70%" valign="top" class="classcell"><p><span class="classtext"><font color="#053958" style="font-weight: normal">mDNS Detection</font></span></p></td>
+</tr>
+<tr>
+<td width="20%" valign="top" class="classcell0"><p><span class="classtext"><font color="#ffffff" style="font-weight: bold">Info</font></span></p></td>
+<td width="10%" valign="top" class="classcell"><span class="classtext"><a href="http://www.nessus.org/plugins/index.php?view=single&amp;id=10107" target="_blank"> 10107</a><br></span></td>
+<td width="70%" valign="top" class="classcell"><p><span class="classtext"><font color="#053958" style="font-weight: normal">HTTP Server Type and Version</font></span></p></td>
+</tr>
+<tr>
+<td width="20%" valign="top" class="classcell0"><p><span class="classtext"><font color="#ffffff" style="font-weight: bold">Info</font></span></p></td>
+<td width="10%" valign="top" class="classcell"><span class="classtext"><a href="http://www.nessus.org/plugins/index.php?view=single&amp;id=10114" target="_blank"> 10114</a><br></span></td>
+<td width="70%" valign="top" class="classcell"><p><span class="classtext"><font color="#053958" style="font-weight: normal">ICMP Timestamp Request Remote Date Disclosure</font></span></p></td>
+</tr>
+<tr>
+<td width="20%" valign="top" class="classcell0"><p><span class="classtext"><font color="#ffffff" style="font-weight: bold">Info</font></span></p></td>
+<td width="10%" valign="top" class="classcell"><span class="classtext"><a href="http://www.nessus.org/plugins/index.php?view=single&amp;id=10147" target="_blank"> 10147</a><br></span></td>
+<td width="70%" valign="top" class="classcell"><p><span class="classtext"><font color="#053958" style="font-weight: normal">Nessus Server Detection</font></span></p></td>
+</tr>
+<tr>
+<td width="20%" valign="top" class="classcell0"><p><span class="classtext"><font color="#ffffff" style="font-weight: bold">Info</font></span></p></td>
+<td width="10%" valign="top" class="classcell"><span class="classtext"><a href="http://www.nessus.org/plugins/index.php?view=single&amp;id=10287" target="_blank"> 10287</a><br></span></td>
+<td width="70%" valign="top" class="classcell"><p><span class="classtext"><font color="#053958" style="font-weight: normal">Traceroute Information</font></span></p></td>
+</tr>
+<tr>
+<td width="20%" valign="top" class="classcell0"><p><span class="classtext"><font color="#ffffff" style="font-weight: bold">Info</font></span></p></td>
+<td width="10%" valign="top" class="classcell"><span class="classtext"><a href="http://www.nessus.org/plugins/index.php?view=single&amp;id=10863" target="_blank"> 10863</a><br></span></td>
+<td width="70%" valign="top" class="classcell"><p><span class="classtext"><font color="#053958" style="font-weight: normal">SSL Certificate Information</font></span></p></td>
+</tr>
+<tr>
+<td width="20%" valign="top" class="classcell0"><p><span class="classtext"><font color="#ffffff" style="font-weight: bold">Info</font></span></p></td>
+<td width="10%" valign="top" class="classcell"><span class="classtext"><a href="http://www.nessus.org/plugins/index.php?view=single&amp;id=11219" target="_blank"> 11219</a><br></span></td>
+<td width="70%" valign="top" class="classcell"><p><span class="classtext"><font color="#053958" style="font-weight: normal">Nessus SYN scanner</font></span></p></td>
+</tr>
+<tr>
+<td width="20%" valign="top" class="classcell0"><p><span class="classtext"><font color="#ffffff" style="font-weight: bold">Info</font></span></p></td>
+<td width="10%" valign="top" class="classcell"><span class="classtext"><a href="http://www.nessus.org/plugins/index.php?view=single&amp;id=11936" target="_blank"> 11936</a><br></span></td>
+<td width="70%" valign="top" class="classcell"><p><span class="classtext"><font color="#053958" style="font-weight: normal">OS Identification</font></span></p></td>
+</tr>
+<tr>
+<td width="20%" valign="top" class="classcell0"><p><span class="classtext"><font color="#ffffff" style="font-weight: bold">Info</font></span></p></td>
+<td width="10%" valign="top" class="classcell"><span class="classtext"><a href="http://www.nessus.org/plugins/index.php?view=single&amp;id=12053" target="_blank"> 12053</a><br></span></td>
+<td width="70%" valign="top" class="classcell"><p><span class="classtext"><font color="#053958" style="font-weight: normal">Host Fully Qualified Domain Name (FQDN) Resolution</font></span></p></td>
+</tr>
+<tr>
+<td width="20%" valign="top" class="classcell0"><p><span class="classtext"><font color="#ffffff" style="font-weight: bold">Info</font></span></p></td>
+<td width="10%" valign="top" class="classcell"><span class="classtext"><a href="http://www.nessus.org/plugins/index.php?view=single&amp;id=19506" target="_blank"> 19506</a><br></span></td>
+<td width="70%" valign="top" class="classcell"><p><span class="classtext"><font color="#053958" style="font-weight: normal">Nessus Scan Information</font></span></p></td>
+</tr>
+<tr>
+<td width="20%" valign="top" class="classcell0"><p><span class="classtext"><font color="#ffffff" style="font-weight: bold">Info</font></span></p></td>
+<td width="10%" valign="top" class="classcell"><span class="classtext"><a href="http://www.nessus.org/plugins/index.php?view=single&amp;id=20108" target="_blank"> 20108</a><br></span></td>
+<td width="70%" valign="top" class="classcell"><p><span class="classtext"><font color="#053958" style="font-weight: normal">Web Server / Application favicon.ico Vendor Fingerprinting</font></span></p></td>
+</tr>
+<tr>
+<td width="20%" valign="top" class="classcell0"><p><span class="classtext"><font color="#ffffff" style="font-weight: bold">Info</font></span></p></td>
+<td width="10%" valign="top" class="classcell"><span class="classtext"><a href="http://www.nessus.org/plugins/index.php?view=single&amp;id=21643" target="_blank"> 21643</a><br></span></td>
+<td width="70%" valign="top" class="classcell"><p><span class="classtext"><font color="#053958" style="font-weight: normal">SSL Cipher Suites Supported</font></span></p></td>
+</tr>
+<tr>
+<td width="20%" valign="top" class="classcell0"><p><span class="classtext"><font color="#ffffff" style="font-weight: bold">Info</font></span></p></td>
+<td width="10%" valign="top" class="classcell"><span class="classtext"><a href="http://www.nessus.org/plugins/index.php?view=single&amp;id=22964" target="_blank"> 22964</a><br></span></td>
+<td width="70%" valign="top" class="classcell"><p><span class="classtext"><font color="#053958" style="font-weight: normal">Service Detection</font></span></p></td>
+</tr>
+<tr>
+<td width="20%" valign="top" class="classcell0"><p><span class="classtext"><font color="#ffffff" style="font-weight: bold">Info</font></span></p></td>
+<td width="10%" valign="top" class="classcell"><span class="classtext"><a href="http://www.nessus.org/plugins/index.php?view=single&amp;id=24260" target="_blank"> 24260</a><br></span></td>
+<td width="70%" valign="top" class="classcell"><p><span class="classtext"><font color="#053958" style="font-weight: normal">HyperText Transfer Protocol (HTTP) Information</font></span></p></td>
+</tr>
+<tr>
+<td width="20%" valign="top" class="classcell0"><p><span class="classtext"><font color="#ffffff" style="font-weight: bold">Info</font></span></p></td>
+<td width="10%" valign="top" class="classcell"><span class="classtext"><a href="http://www.nessus.org/plugins/index.php?view=single&amp;id=25220" target="_blank"> 25220</a><br></span></td>
+<td width="70%" valign="top" class="classcell"><p><span class="classtext"><font color="#053958" style="font-weight: normal">TCP/IP Timestamps Supported</font></span></p></td>
+</tr>
+<tr>
+<td width="20%" valign="top" class="classcell0"><p><span class="classtext"><font color="#ffffff" style="font-weight: bold">Info</font></span></p></td>
+<td width="10%" valign="top" class="classcell"><span class="classtext"><a href="http://www.nessus.org/plugins/index.php?view=single&amp;id=35716" target="_blank"> 35716</a><br></span></td>
+<td width="70%" valign="top" class="classcell"><p><span class="classtext"><font color="#053958" style="font-weight: normal">Ethernet Card Manufacturer Detection</font></span></p></td>
+</tr>
+<tr>
+<td width="20%" valign="top" class="classcell0"><p><span class="classtext"><font color="#ffffff" style="font-weight: bold">Info</font></span></p></td>
+<td width="10%" valign="top" class="classcell"><span class="classtext"><a href="http://www.nessus.org/plugins/index.php?view=single&amp;id=42980" target="_blank"> 42980</a><br></span></td>
+<td width="70%" valign="top" class="classcell"><p><span class="classtext"><font color="#053958" style="font-weight: normal">SSL Certificate Expiry - Future Validity</font></span></p></td>
+</tr>
+<tr>
+<td width="20%" valign="top" class="classcell0"><p><span class="classtext"><font color="#ffffff" style="font-weight: bold">Info</font></span></p></td>
+<td width="10%" valign="top" class="classcell"><span class="classtext"><a href="http://www.nessus.org/plugins/index.php?view=single&amp;id=45410" target="_blank"> 45410</a><br></span></td>
+<td width="70%" valign="top" class="classcell"><p><span class="classtext"><font color="#053958" style="font-weight: normal">SSL Certificate commonName Mismatch</font></span></p></td>
+</tr>
+<tr>
+<td width="20%" valign="top" class="classcell0"><p><span class="classtext"><font color="#ffffff" style="font-weight: bold">Info</font></span></p></td>
+<td width="10%" valign="top" class="classcell"><span class="classtext"><a href="http://www.nessus.org/plugins/index.php?view=single&amp;id=45590" target="_blank"> 45590</a><br></span></td>
+<td width="70%" valign="top" class="classcell"><p><span class="classtext"><font color="#053958" style="font-weight: normal">Common Platform Enumeration (CPE)</font></span></p></td>
+</tr>
+<tr>
+<td width="20%" valign="top" class="classcell0"><p><span class="classtext"><font color="#ffffff" style="font-weight: bold">Info</font></span></p></td>
+<td width="10%" valign="top" class="classcell"><span class="classtext"><a href="http://www.nessus.org/plugins/index.php?view=single&amp;id=54615" target="_blank"> 54615</a><br></span></td>
+<td width="70%" valign="top" class="classcell"><p><span class="classtext"><font color="#053958" style="font-weight: normal">Device Type</font></span></p></td>
+</tr>
+<tr>
+<td width="20%" valign="top" class="classcell0"><p><span class="classtext"><font color="#ffffff" style="font-weight: bold">Info</font></span></p></td>
+<td width="10%" valign="top" class="classcell"><span class="classtext"><a href="http://www.nessus.org/plugins/index.php?view=single&amp;id=56984" target="_blank"> 56984</a><br></span></td>
+<td width="70%" valign="top" class="classcell"><p><span class="classtext"><font color="#053958" style="font-weight: normal">SSL / TLS Versions Supported</font></span></p></td>
+</tr>
+<tr>
+<td width="20%" valign="top" class="classcell0"><p><span class="classtext"><font color="#ffffff" style="font-weight: bold">Info</font></span></p></td>
+<td width="10%" valign="top" class="classcell"><span class="classtext"><a href="http://www.nessus.org/plugins/index.php?view=single&amp;id=62563" target="_blank"> 62563</a><br></span></td>
+<td width="70%" valign="top" class="classcell"><p><span class="classtext"><font color="#053958" style="font-weight: normal">SSL Compression Methods Supported</font></span></p></td>
+</tr>
+</table></p></div></div></body></html>
